@@ -2760,7 +2760,7 @@ body.anita-show-menu .anita-page-background {
 
 /* --- Grid Gallery --- */
 
-.anita-justified-grid {
+.food-sec {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
@@ -2780,146 +2780,343 @@ body.anita-show-menu .anita-page-background {
 }
 
 /* Container for video */
-.video-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+/* General Styles for Video Container */
+/* Container for the video gallery */
+/* Video Thumbnail Link Styling */
+.custom-lightbox-link {
+  display: block;
 }
 
-/* The video itself */
-.video-container video {
+/* Video Thumbnail Styling */
+.custom-video-container video {
   width: 100%;
-  height: 100%;
+  height: 500px; /* Set height to 500px */
   object-fit: cover;
-  transition: transform 0.3s, filter 0.3s;
+  border-radius: 10px;
 }
 
-/* Hover effect: Scale up and unmute */
-.video-container:hover video {
-  transform: scale(1.2); /* Adjust scale as needed */
-  filter: brightness(1.2); /* Optional: Add a brightness effect to highlight the video */
-}
-
-/* Popup style */
-
-.popup-container {
+/* Fullscreen Popup Container */
+.custom-popup-container {
   display: none; /* Initially hidden */
-  position: fixed; /* This ensures the popup is fixed to the screen */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8); /* Dark overlay */
   justify-content: center;
-  align-items: center; /* Center the content vertically */
+  align-items: center;
   z-index: 1000;
-  overflow: hidden; /* Prevents overflow issues */
+  overflow: hidden;
 }
 
-.popup-container.show {
-  display: flex; /* Flexbox layout to center content */
+/* Wrapper for Popup Content */
+.custom-popup-content {
+  height: 700px;
+  max-width: 90%;
+  position: relative;
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  top: 30%;
+  transform: translateY(-50%);
 }
 
-/* New container for video and close icon */
-.popup-content {
-  position: relative; /* Make it a positioning context for the close icon */
-  display: inline-block;
-  top: 9%; /* Adjust the video down by 10% from the top */
-  transform: translateY(-5%); 
-}
-
-.popup-container video {
-  max-width: 100%;
+/* Fullscreen Popup Video */
+.custom-popup-content video {
+  width: 100%;
   max-height: 100%;
+  object-fit: contain;
+}
+
+/* Close Icon Styling */
+.custom-close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.custom-popup-container video{
+  height:600px;
+  width:100%;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For devices with a screen width below 768px */
+@media (max-width: 768px) {
+  .custom-video-container video {
+    height: 600px; /* Maintain reduced height on smaller screens */
+  }
+
+  .custom-popup-content {
+    height: 500px; /* Adjust height for smaller screens */
+    width: 100%;  /* Adjust width for smaller screens */
+  }
+
+  .custom-close-icon {
+    font-size: 24px; /* Make the close icon smaller */
+  }
+  .custom-popup-container video{
+    height:600px;
+    width:100%;
+  }
+}
+
+/* For very small devices (below 480px) */
+@media (max-width: 480px) {
+  .custom-popup-content {
+    height: 500px; /* Height for very small screens */
+    width: 100%;  /* Width for very small screens */
+    margin-top: 1400px; /* Move the popup down from the top */
+  }
+
+  .custom-close-icon {
+    font-size: 20px; /* Smaller close icon */
+  }
+
+  .custom-video-container video {
+    height: 300px; /* Further reduced height for thumbnail */
+  }
+  .custom-popup-container video{
+    height:600px;
+    width:100%;
+  }
+}
+
+
+
+/* Grid layout for the video gallery */
+/* Grid layout for the video gallery */
+.video-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 5px;
+  margin-top: 10px;
+}
+
+/* Styling for video thumbnails */
+.video-thumbnail-link {
+  display: block;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 500px; /* Reduced height to 500px */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Fullscreen popup container */
+.fullscreen-popup {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+/* Wrapper for the popup content */
+.popup-content-wrapper {
+  height: 500px;
+  width:100%;
+  max-width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Fullscreen popup video */
+.popup-video {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 /* Close icon styling */
-.close-icon {
+.popup-close-icon {
   position: absolute;
- 
-  cursor: pointer;
+  top: 10px;
+  right: 10px;
   font-size: 30px;
+  cursor: pointer;
   color: white;
-  z-index: 1001; /* Ensure it's on top of the video */
 }
 
-.close-icon:hover {
-  color: #fff; /* Change the color on hover */
+/* Media Queries for responsiveness */
+
+/* For devices with a screen width below 768px */
+@media (max-width: 768px) {
+  .video-thumbnail {
+    height: 500px; /* Reduced height to 500px on smaller screens */
+  }
+
+  .popup-content-wrapper {
+    height: 500px;
+    width: 500px;
+  }
+
+  /* Make the close icon smaller */
+  .popup-close-icon {
+    font-size: 24px;
+  }
+}
+
+/* For very small devices (below 480px) */
+@media (max-width: 480px) {
+  .popup-content-wrapper {
+    height: 500px;
+    width: 500px;
+  }
+
+  .popup-close-icon {
+    font-size: 20px;
+  }
+
+  /* Further reduce the video thumbnail height for very small screens */
+  .video-thumbnail {
+    height: 300px; /* Set to 300px for very small screens */
+  }
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: calc(100% / 3); /* 3 items per screen */
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 10px;
+  border-radius: 10%;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+.carousel-control[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: grey;
+  backdrop-filter: blur(30px);
+}
+/* Fullscreen video popup container */
+.fullscreen-video-popup {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+/* Wrapper for the popup content */
+.popup-inner-content {
+  height: 500px;
+  width:100%;
+  max-width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Fullscreen popup video */
+.fullscreen-video {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Close button styling */
+.popup-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+  z-index: 1; /* Ensure the close button is above other content */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .popup-inner-content {
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  .popup-close-btn {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 480px) {
-  .popup-content {
-    top: 0%; /* Adjust position for small screens */
-    transform: translateY(0); /* Remove translation for smaller screens */
+  .popup-inner-content {
+    max-width: 95%;
+    max-height: 90%;
   }
 
-  .popup-container video {
-    max-width: 90%; /* Slightly reduce video width */
-    max-height: 50%; /* Reduce video height */
-  }
-
-  .close-icon {
-    font-size: 20px; /* Make the close icon smaller for phones */
-    top: 5px;
-    right: 5px;
-  }
-}
-
-/* Small devices (tablets, 481px to 768px) */
-@media (max-width: 768px) {
-  .popup-content {
-    top: 7%;
-    transform: translateY(-2%);
-  }
-
-  .popup-container video {
-    max-width: 90%; /* Adjust video size for tablets */
-    max-height: 70%;
-  }
-
-  .close-icon {
-    font-size: 25px; /* Adjust close icon size */
-    top: 8px;
-    right: 8px;
-  }
-}
-
-/* Medium devices (laptops, 769px to 1200px) */
-@media (max-width: 1200px) {
-  .popup-content {
-    top: 8%;
-    transform: translateY(-3%);
-  }
-
-  .popup-container video {
-    max-width: 95%; /* Adjust video size for medium screens */
-    max-height: 80%;
-  }
-
-  .close-icon {
-    font-size: 28px;
-    top: 9px;
-    right: 9px;
-  }
-}
-
-/* Large devices (desktops, 1201px and above) */
-@media (min-width: 1201px) {
-  .popup-content {
-    top: 9%;
-    transform: translateY(-5%);
-  }
-
-  .popup-container video {
-    max-width: 100%; /* Maintain full video size for larger screens */
-    max-height: 100%;
-  }
-
-  .close-icon {
-    font-size: 30px; /* Default close icon size */
-    top: 10px;
-    right: 10px;
+  .popup-close-btn {
+    font-size: 20px;
   }
 }
 

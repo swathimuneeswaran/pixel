@@ -592,31 +592,31 @@ class Anita {
         }
 
         // Right Click Protection
-    	if ( _self.options.disable_right_click ) {
-            // Append DOM
-            _self.$el.body.append('\
-            <div class="anita-rcp-message">\
-                <div class="anita-rcpm-overlay"></div>\
-                <div class="anita-rcpm-box">\
-                    <p>'+ _self.options.l10n.rcp_message +'</p>\
-                    <a href="#" class="anita-rcpm-close anita-button">'+ _self.options.l10n.rcp_button +'</a>\
-                </div>\
-            </div><!-- .anita-rcp-message -->');
+    	// if ( _self.options.disable_right_click ) {
+        //     // Append DOM
+        //     _self.$el.body.append('\
+        //     <div class="anita-rcp-message">\
+        //         <div class="anita-rcpm-overlay"></div>\
+        //         <div class="anita-rcpm-box">\
+        //             <p>'+ _self.options.l10n.rcp_message +'</p>\
+        //             <a href="#" class="anita-rcpm-close anita-button">'+ _self.options.l10n.rcp_button +'</a>\
+        //         </div>\
+        //     </div><!-- .anita-rcp-message -->');
 
-            // Disable Context Menu
-            jQuery(document).on('contextmenu', function (e) {
-    			e.preventDefault();
-    			if ( jQuery('.anita-rcp-message').length ) {
-    				_self.$el.body.addClass('anita-rcp-message-show');
-    			}
-    		});
-            if ( jQuery('.anita-rcp-message').length ) {
-                jQuery('.anita-rcp-message').on('click', '.anita-rcpm-overlay, .anita-rcpm-box', function(e) {
-                    e.preventDefault();
-                    _self.$el.body.removeClass('anita-rcp-message-show');
-                });
-            }
-    	}
+        //     // Disable Context Menu
+        //     jQuery(document).on('contextmenu', function (e) {
+    	// 		e.preventDefault();
+    	// 		if ( jQuery('.anita-rcp-message').length ) {
+    	// 			_self.$el.body.addClass('anita-rcp-message-show');
+    	// 		}
+    	// 	});
+        //     if ( jQuery('.anita-rcp-message').length ) {
+        //         jQuery('.anita-rcp-message').on('click', '.anita-rcpm-overlay, .anita-rcpm-box', function(e) {
+        //             e.preventDefault();
+        //             _self.$el.body.removeClass('anita-rcp-message-show');
+        //         });
+        //     }
+    	// }
 
     	// Image Drag Protection
     	if ( _self.options.image_drag_protection ) {

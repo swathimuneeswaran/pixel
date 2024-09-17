@@ -16,7 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&family=Rajdhani:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
     <!-- Template Config -->
     <link type="text/css" rel="stylesheet" href="css/config.css" />
@@ -95,45 +98,18 @@
         <!-- </section> -->
 
         <section class="anita-section" data-aos="fade-up">
-          <div class="anita-justified-grid">
+          <div class="food-sec">
             <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/01.jpg"
-              class="anita-lightbox-link"
-              data-size="5267x7897"
-            >
-              <img
-                src="img/food/food1.webp"
-                alt="Photo 01"
-                width="500"
-                height="460"
-              />
+            <a href="img/albums/album12/01.jpg" class="anita-lightbox-link">
+              <img src="img/food/food1.webp" alt="Photo 01" />
             </a>
             <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/02.jpg"
-              class="anita-lightbox-link"
-              data-size="585x1080"
-            >
-              <img
-                src="img/food/food2.webp"
-                alt="Photo 02"
-                width="585"
-                height="1080"
-              />
+            <a href="img/albums/album12/02.jpg" class="anita-lightbox-link">
+              <img src="img/food/food2.webp" alt="Photo 02" />
             </a>
             <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/03.jpg"
-              class="anita-lightbox-link"
-              data-size="1620x1080"
-            >
-              <img
-                src="img/food/food3.webp"
-                alt="Photo 03"
-                width="1620"
-                height="1080"
-              />
+            <a href="img/albums/album12/03.jpg" class="anita-lightbox-link">
+              <img src="img/food/food3.webp" alt="Photo 03" />
             </a>
           </div>
 
@@ -153,8 +129,7 @@
             </a>
           </div>
 
-         
-          <div class="anita-justified-grid">
+          <div class="food-sec">
             <!-- Gallery Item -->
             <a
               href="img/albums/album12/03.jpg"
@@ -192,9 +167,9 @@
                 height="700"
               />
             </a>
-            
           </div>
-          <div class="anita-justified-grid" style="margin-top: 10px">
+
+          <div class="food-sec" style="margin-top: 10px">
             <!-- Gallery Item -->
             <a
               href="img/albums/album12/03.jpg"
@@ -232,9 +207,8 @@
                 height="700"
               />
             </a>
-         
           </div>
-          <div class="anita-justified-grid" style="margin-top: 10px">
+          <div class="food-sec" style="margin-top: 10px">
             <!-- Gallery Item -->
             <a
               href="img/albums/album12/03.jpg"
@@ -260,11 +234,10 @@
                 height="900"
               />
             </a>
-           
           </div>
 
           <div
-            class="anita-justified-grid"
+            class="food-sec"
             style="
               display: flex;
               gap: 10px;
@@ -300,30 +273,124 @@
           </div>
 
           <!-- Video section -->
-          <div class="video-container">
-            <video id="hover-video" autoplay muted loop>
-              <source src="img/food/food_video1.webm" type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        
-          <!-- Popup Container for Fullscreen Video -->
-          <div id="popup-container" class="popup-container">
-            <!-- New wrapper around video and close icon -->
-            <div class="popup-content">
-              <div class="close-icon">
-                <i class="fas fa-times" aria-hidden="true"></i>
+          <div class="custom-video-full-container">
+            <div class="custom-video-container" style="margin-top: 10px">
+              <a
+                href="#"
+                class="custom-lightbox-link"
+                data-video-src="img/food/food_video1.webm"
+              >
+                <video id="hover-video" autoplay muted loop>
+                  <source src="img/food/food_video1.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              </a>
+            </div>
+
+            <!-- Popup Container for Fullscreen Video -->
+            <div id="custom-popup-container" class="custom-popup-container">
+              <!-- Wrapper around video and close icon -->
+              <div class="custom-popup-content">
+                <div class="custom-close-icon">
+                  <i class="fas fa-times" aria-hidden="true"></i>
+                </div>
+                <video id="popup-video" controls>
+                  <source src="" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
-              <video id="popup-video" controls>
-                <source src="img/food/food_video1.webm" type="video/webm" />
-                Your browser does not support the video tag.
-              </video>
             </div>
           </div>
-          
 
           <div
-          class="anita-justified-grid"
+            class="food-sec"
+            style="
+              display: flex;
+              gap: 10px;
+              align-items: stretch;
+              margin-top: 10px;
+            "
+          >
+            <!-- Gallery Item -->
+            <a
+              href="img/albums/album12/05.jpg"
+              class="anita-lightbox-link"
+              data-size="720x1080"
+              style="flex: 3"
+            >
+              <img
+                src="img/food/food14.webp"
+                alt="Photo 05"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </a>
+            <a
+              href="img/albums/album12/03.jpg"
+              class="anita-lightbox-link"
+              data-size="1620x1080"
+              style="flex: 7"
+            >
+              <img
+                src="img/food/food13.webp"
+                alt="Photo 03"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </a>
+          </div>
+
+         <div class="video-gallery-grid">
+  <!-- Gallery Item 1 -->
+  <a
+    class="video-thumbnail-trigger"
+    data-video-src="img/food/food_video2.webm"
+  >
+    <video class="video-thumbnail" autoplay muted loop>
+      <source src="img/food/food_video2.webm" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+  </a>
+
+  <!-- Gallery Item 2 -->
+  <a
+    class="video-thumbnail-trigger"
+    data-video-src="img/food/food_video3.webm"
+  >
+    <video class="video-thumbnail" autoplay muted loop>
+      <source src="img/food/food_video3.webm" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+  </a>
+
+  <!-- Gallery Item 3 -->
+  <a
+    class="video-thumbnail-trigger"
+    data-video-src="img/food/food_video4.webm"
+  >
+    <video class="video-thumbnail" autoplay muted loop>
+      <source src="img/food/food_video4.webm" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+  </a>
+</div>
+
+<!-- Fullscreen Video Popup -->
+<div id="fullscreen-video-popup" class="fullscreen-video-popup">
+  <div class="popup-inner-content">
+    <button class="popup-close-btn">
+      <i class="fas fa-times" aria-hidden="true"></i>
+    </button>
+    <video id="fullscreen-video-player" controls class="fullscreen-video">
+      <source src="" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+          
+
+
+          <div
+          class="food-sec"
           style="
             display: flex;
             gap: 10px;
@@ -333,261 +400,184 @@
         >
           <!-- Gallery Item -->
           <a
-          href="img/albums/album12/05.jpg"
-          class="anita-lightbox-link"
-          data-size="720x1080"
-          style="flex: 3"
-        >
-          <img
-            src="img/food/food14.webp"
-            alt="Photo 05"
-            style="width: 100%; height: 100%; object-fit: cover"
-          />
-        </a>
-          <a
             href="img/albums/album12/03.jpg"
             class="anita-lightbox-link"
-            data-size="1620x1080"
-            style="flex: 7"
+           
           >
             <img
-              src="img/food/food13.webp"
+              src="img/food/chocolate.webp"
               alt="Photo 03"
               style="width: 100%; height: 100%; object-fit: cover"
             />
           </a>
+          <a
+            href="img/albums/album12/05.jpg"
+            class="anita-lightbox-link"
+           
+          >
+            <img
+              src="img/food/curry.webp"
+              alt="Photo 05"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </a>
+          <a
+          href="img/albums/album12/05.jpg"
+          class="anita-lightbox-link"
           
+        >
+          <img
+            src="img/food/french_fries.webp"
+            alt="Photo 05"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </a>
         </div>
 
+        
+        <div
+        class="food-sec"
+        style="
+          display: flex;
+          gap: 10px;
+          align-items: stretch;
+          margin-top: 10px;
+        "
+      >
+        <!-- Gallery Item -->
+        <a
+          href="img/albums/album12/03.jpg"
+          class="anita-lightbox-link"
+         
+        >
+          <img
+            src="img/food/chicken1.webp"
+            alt="Photo 03"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </a>
+        <a
+          href="img/albums/album12/05.jpg"
+          class="anita-lightbox-link"
+         
+        >
+          <img
+            src="img/food/chicken2.webp"
+            alt="Photo 05"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </a>
+        <a
+        href="img/albums/album12/05.jpg"
+        class="anita-lightbox-link"
+        
+      >
+        <img
+          src="img/food/chicken3.webp"
+          alt="Photo 05"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </a>
+      </div>
 
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); grid-gap: 5px; margin-top: 10px;">
-          <!-- Gallery Item 1 -->
-          <a href="img/albums/album12/05.jpg" class="anita-lightbox-link" data-size="720x1080" style="display: block;">
-            <video id="hover-video" autoplay muted loop style="width: 100%; height: 600px; object-fit: cover; border-radius: 10px;">
-              <source src="img/food/food_video2.webm" type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
-          </a>
-        
-          <!-- Gallery Item 2 -->
-          <a href="img/albums/album12/03.jpg" class="anita-lightbox-link" data-size="1620x1080" style="display: block;">
-            <video id="hover-video" autoplay muted loop style="width: 100%; height: 600px; object-fit: cover; border-radius: 10px;">
-              <source src="img/food/food_video3.webm" type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
-          </a>
-        
-          <!-- Gallery Item 3 -->
-          <a href="img/albums/album12/03.jpg" class="anita-lightbox-link" data-size="1620x1080" style="display: block;">
-            <video id="hover-video" autoplay muted loop style="width: 100%; height: 600px; object-fit: cover; border-radius: 10px;">
-              <source src="img/food/food_video4.webm" type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
-          </a>
+      
+      <div class="carousel-container">
+        <div class="carousel">
+          <!-- Cloned Last Slide (For Infinite Loop) -->
+          <div class="carousel-item">
+            <a class="video-thumbnail-link" data-video-src="img/food/reel5.webm">
+              <video class="video-thumbnail" autoplay muted loop>
+                <source src="img/food/reel5.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            </a>
+          </div>
+      
+          <!-- Carousel Item 1 -->
+          <div class="carousel-item">
+            <a class="video-thumbnail-link" data-video-src="img/food/reel1.webm">
+              <video class="video-thumbnail" autoplay muted loop>
+                <source src="img/food/reel1.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            </a>
+          </div>
+      
+          <!-- Carousel Item 2 -->
+          <div class="carousel-item">
+            <a class="video-thumbnail-link" data-video-src="img/food/reel2.webm">
+              <video class="video-thumbnail" autoplay muted loop>
+                <source src="img/food/reel2.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            </a>
+          </div>
+      
+          <!-- Carousel Item 3 -->
+          <div class="carousel-item">
+            <a class="video-thumbnail-link" data-video-src="img/food/reel3.webm">
+              <video class="video-thumbnail" autoplay muted loop>
+                <source src="img/food/reel3.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            </a>
+          </div>
+      
+          <!-- Carousel Item 4 -->
+          <div class="carousel-item">
+            <a class="video-thumbnail-link" data-video-src="img/food/reel4.webm">
+              <video class="video-thumbnail" autoplay muted loop>
+                <source src="img/food/reel4.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            </a>
+          </div>
+      
+          <!-- Carousel Item 5 -->
+          <div class="carousel-item">
+            <a class="video-thumbnail-link" data-video-src="img/food/reel5.webm">
+              <video class="video-thumbnail" autoplay muted loop>
+                <source src="img/food/reel5.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            </a>
+          </div>
+      
+          <!-- Cloned First Slide (For Infinite Loop) -->
+          <div class="carousel-item">
+            <a class="video-thumbnail-link" data-video-src="img/food/reel1.webm">
+              <video class="video-thumbnail" autoplay muted loop>
+                <source src="img/food/reel1.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            </a>
+          </div>
         </div>
-        
-        
-
-
-
-
-
-          
-          <div
-            class="anita-justified-grid anita-justified-zoom-hover anita-justified-fade-hover anita-justified-image-zoom-hover"
-          >
-            <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/09.jpg"
-              class="anita-lightbox-link"
-              data-size="720x1080"
-            >
-              <img
-                src="img/albums/album12/09.jpg"
-                alt="Photo 09"
-                width="720"
-                height="1080"
-              />
-            </a>
-            <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/10.jpg"
-              class="anita-lightbox-link"
-              data-size="720x1080"
-            >
-              <img
-                src="img/albums/album12/10.jpg"
-                alt="Photo 10"
-                width="720"
-                height="1080"
-              />
-            </a>
-            <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/11.jpg"
-              class="anita-lightbox-link"
-              data-size="1620x1080"
-            >
-              <img
-                src="img/albums/album12/11.jpg"
-                alt="Photo 11"
-                width="1620"
-                height="1080"
-              />
-            </a>
-            <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/12.jpg"
-              class="anita-lightbox-link"
-              data-size="772x1080"
-            >
-              <img
-                src="img/albums/album12/12.jpg"
-                alt="Photo 12"
-                width="772"
-                height="1080"
-              />
-            </a>
-            <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/13.jpg"
-              class="anita-lightbox-link"
-              data-size="811x1080"
-            >
-              <img
-                src="img/albums/album12/13.jpg"
-                alt="Photo 13"
-                width="810"
-                height="1080"
-              />
-            </a>
-            <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/14.jpg"
-              class="anita-lightbox-link"
-              data-size="1631x1080"
-            >
-              <img
-                src="img/albums/album12/14.jpg"
-                alt="Photo 14"
-                width="1631"
-                height="1080"
-              />
-            </a>
+      
+        <!-- Navigation Controls -->
+        <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+      
+      <!-- Popup Container for Fullscreen Video -->
+      <div id="fullscreen-popup" class="fullscreen-popup">
+        <div class="popup-content-wrapper">
+          <div class="popup-close-icon">
+            <i class="fas fa-times" aria-hidden="true"></i>
           </div>
-          <!-- Before and after section -->
-          <!-- Video section -->
-          <iframe class="frame" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-          </iframe>
-          <!-- Gallery Item -->
-          <div
-            class="anita-justified-grid anita-justified-zoom-hover anita-justified-fade-hover anita-justified-image-zoom-hover"
-          >
-            <a
-              href="img/albums/album12/15.jpg"
-              class="anita-lightbox-link"
-              data-size="810x1080"
-            >
-              <img
-                src="img/albums/album12/15.jpg"
-                alt="Photo 15"
-                width="810"
-                height="1080"
-              />
-            </a>
-            <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/16.jpg"
-              class="anita-lightbox-link"
-              data-size="810x1080"
-            >
-              <img
-                src="img/albums/album12/16.jpg"
-                alt="Photo 16"
-                width="810"
-                height="1080"
-              />
-            </a>
-            <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/17.jpg"
-              class="anita-lightbox-link"
-              data-size="1620x1080"
-            >
-              <img
-                src="img/albums/album12/17.jpg"
-                alt="Photo 17"
-                width="1620"
-                height="1080"
-              />
-            </a>
-            <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/18.jpg"
-              class="anita-lightbox-link"
-              data-size="608x1080"
-            >
-              <img
-                src="img/albums/album12/18.jpg"
-                alt="Photo 18"
-                width="608"
-                height="1080"
-              />
-            </a>
-            <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/19.jpg"
-              class="anita-lightbox-link"
-              data-size="720x1080"
-            >
-              <img
-                src="img/albums/album12/19.jpg"
-                alt="Photo 19"
-                width="720"
-                height="1080"
-              />
-            </a>
-            <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/20.jpg"
-              class="anita-lightbox-link"
-              data-size="1620x1080"
-            >
-              <img
-                src="img/albums/album12/20.jpg"
-                alt="Photo 20"
-                width="1620"
-                height="1080"
-              />
-            </a>
-            <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/21.jpg"
-              class="anita-lightbox-link"
-              data-size="720x1080"
-            >
-              <img
-                src="img/albums/album12/21.jpg"
-                alt="Photo 21"
-                width="720"
-                height="1080"
-              />
-            </a>
-            <!-- Gallery Item -->
-            <a
-              href="img/albums/album12/22.jpg"
-              class="anita-lightbox-link"
-              data-size="720x1080"
-            >
-              <img
-                src="img/albums/album12/22.jpg"
-                alt="Photo 22"
-                width="720"
-                height="1080"
-              />
-            </a>
-          </div>
+          <video id="fullscreen-video" controls class="popup-video">
+            <source src="" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      
+      
+      
+
+
+
+
           <!-- .anita-works-grid -->
         </section>
 
@@ -619,50 +609,189 @@
       </div>
     </footer>
 
-
     <!-- JS Scripts -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-  const video = document.getElementById('hover-video');
-  const popupContainer = document.getElementById('popup-container');
-  const popupVideo = document.getElementById('popup-video');
-  const closeIcon = document.querySelector('.close-icon');
+      // Get references to DOM elements
+      // JavaScript to handle popup functionality
 
-  // On hover over video, unmute and show the popup
-  video.addEventListener('mouseenter', function() {
-    video.muted = false; // Unmute video
-    video.play(); // Ensure video plays
-  });
+      document.addEventListener("DOMContentLoaded", function () {
+        const videoLinks = document.querySelectorAll(".custom-lightbox-link");
+        const popupContainer = document.getElementById(
+          "custom-popup-container"
+        );
+        const popupVideo = document.getElementById("popup-video");
+        const closeIcon = document.querySelector(".custom-close-icon");
 
-  // On mouse leave, mute the video
-  video.addEventListener('mouseleave', function() {
-    video.muted = true; // Mute video
-  });
+        videoLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const videoSrc = this.getAttribute("data-video-src");
+            popupVideo.src = videoSrc;
+            popupVideo.muted = false; // Unmute the video
+            popupContainer.style.display = "flex"; // Show the popup
+            popupVideo.play(); // Auto-play the video
+          });
+        });
 
-  // On click, show the popup with the video
-  video.addEventListener('click', function() {
-    popupContainer.classList.add('show');
-    popupVideo.play(); // Play the video in the popup
-  });
+        closeIcon.addEventListener("click", function () {
+          popupContainer.style.display = "none"; // Hide the popup
+          popupVideo.src = ""; // Clear video source
+          popupVideo.pause(); // Pause the video
+          popupVideo.muted = true; // Mute the video again
+        });
 
-  // Hide popup on click
-  popupContainer.addEventListener('click', function() {
-    popupContainer.classList.remove('show');
-    popupVideo.pause(); // Pause the video
-    popupVideo.currentTime = 0; // Reset the video to the start
-    popupVideo.muted = true; // Ensure video is muted when hidden
-  });
+        popupContainer.addEventListener("click", function (e) {
+          if (e.target === popupContainer) {
+            popupContainer.style.display = "none"; // Hide the popup
+            popupVideo.src = ""; // Clear video source
+            popupVideo.pause(); // Pause the video
+            popupVideo.muted = true; // Mute the video again
+          }
+        });
+      });
 
-  // Add an event listener to the close icon
-  closeIcon.addEventListener('click', function() {
-    popupContainer.classList.remove('show');
-    popupVideo.pause(); // Pause the video
-    popupVideo.currentTime = 0; // Reset the video to the start
-    popupVideo.muted = true; // Ensure video is muted when hidden
+      document.addEventListener("DOMContentLoaded", function () {
+        const popup = document.getElementById("fullscreen-popup");
+        const popupVideo = document.getElementById("fullscreen-video");
+        const closeIcon = document.querySelector(".popup-close-icon");
+
+        // Open popup when a thumbnail is clicked
+        document.querySelectorAll(".video-thumbnail-link").forEach((link) => {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const videoSrc = this.getAttribute("data-video-src");
+            popupVideo.src = videoSrc;
+            popup.style.display = "flex"; // Show the popup
+            popupVideo.play(); // Auto-play the video
+          });
+        });
+
+        // Close popup when close icon is clicked
+        closeIcon.addEventListener("click", function () {
+          popup.style.display = "none"; // Hide the popup
+          popupVideo.pause(); // Pause the video
+          popupVideo.src = ""; // Clear video source
+        });
+
+        // Close popup when clicking outside the video
+        popup.addEventListener("click", function (event) {
+          if (event.target === popup) {
+            popup.style.display = "none"; // Hide the popup
+            popupVideo.pause(); // Pause the video
+            popupVideo.src = ""; // Clear video source
+          }
+        });
+      });
+
+
+      document.querySelectorAll('.video-thumbnail-trigger').forEach(thumbnail => {
+  thumbnail.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent the default action
+
+    const videoSrc = this.getAttribute('data-video-src');
+    const videoPlayer = document.getElementById('fullscreen-video-player');
+    const videoPopup = document.getElementById('fullscreen-video-popup');
+    const popupContent = document.querySelector('.popup-inner-content');
+
+    // Set the video source and display the popup
+    videoPlayer.src = videoSrc;
+    videoPopup.style.display = 'flex'; // Show the popup
+    videoPlayer.play(); // Auto-play the video
+    
+
+    // Center the popup relative to the row
+    const thumbnailRect = this.getBoundingClientRect();
+    const popupRect = popupContent.getBoundingClientRect();
+
+    const left = thumbnailRect.left + window.scrollX + (thumbnailRect.width / 2) - (popupRect.width / 2);
+    const top = thumbnailRect.top + window.scrollY + (thumbnailRect.height / 2) - (popupRect.height / 2);
+
+    // Ensure the popup is centered in the viewport
+    // popupContent.style.left = `${Math.max(0, left)}px`;
+    popupContent.style.top = `${Math.max(0, top)}px`;
+    popupContent.style.position = 'absolute';
   });
 });
+
+// Function to hide the popup
+function hidePopup() {
+  const videoPopup = document.getElementById('fullscreen-video-popup');
+  const videoPlayer = document.getElementById('fullscreen-video-player');
+
+  videoPlayer.pause(); // Pause the video
+  videoPlayer.src = ''; // Clear the video source
+  videoPopup.style.display = 'none'; // Hide the popup
+}
+
+// Add event listener to the close button
+document.querySelector('.popup-close-btn').addEventListener('click', hidePopup);
+
+// Hide the popup when clicking outside of the content
+document.getElementById('fullscreen-video-popup').addEventListener('click', function(e) {
+  if (e.target === this) {
+    hidePopup();
+  }
+});
+
+
+
+
+      
+      let currentSlide = 0; // Start at the first slide
+let slidesToShow = 3; // Default number of slides to show
+
+const carousel = document.querySelector('.carousel');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+function updateSlidesToShow() {
+  const screenWidth = window.innerWidth;
+  slidesToShow = screenWidth <= 480 ? 1 : (screenWidth <= 768 ? 2 : 3); // Show 1, 2, or 3 items based on screen width
+
+  document.querySelectorAll('.carousel-item').forEach(item => {
+    item.style.minWidth = `${100 / slidesToShow}%`; // Adjust item width
+  });
+}
+
+function moveSlide(direction) {
+  const slides = document.querySelectorAll('.carousel-item');
+  const totalSlides = slides.length;
+
+  // Update the current slide index
+  currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+
+  // Handle the transition
+  carousel.style.transition = 'transform 0.5s ease-in-out';
+  carousel.style.transform = `translateX(-${currentSlide * (100 / slidesToShow)}%)`;
+
+  updateArrowState();
+}
+
+function updateArrowState() {
+  const slides = document.querySelectorAll('.carousel-item');
+  const totalSlides = slides.length;
+
+  prevButton.disabled = currentSlide === 0;
+  nextButton.disabled = currentSlide >= totalSlides - slidesToShow;
+}
+
+// Handle resizing and arrow state
+window.addEventListener('resize', () => {
+  updateSlidesToShow();
+  moveSlide(0); // Reset slide position on resize
+});
+
+// Event listeners for navigation buttons
+prevButton.addEventListener('click', () => moveSlide(-1));
+nextButton.addEventListener('click', () => moveSlide(1));
+
+// Initialize
+updateSlidesToShow();
+updateArrowState();
+
+
     </script>
-  
+
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/aos.min.js"></script>
     <script src="js/core.js"></script>
